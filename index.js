@@ -10,10 +10,9 @@ const port = process.env.NODE_ENV !== "development" ? 8080 : 8082;
 // MongoDB connection string build
 const MONGO_CLUSTER_ENDPOINT = process.env.MONGO_CLUSTER_ENDPOINT;
 const MONGO_PORT = 27017;
-const MONGO_USERNAME = process.env.MONGO_USERNAME;
-
-const MONGO_PASSWORD = process.env.MONGO_PASSWORD;
-const ACCOUNT_DB = process.env.MONGO_PRIMARY_DB;
+const MONGO_USERNAME = process.env.MONGO_ACCOUNTAPP_USERNAME;
+const MONGO_PASSWORD = process.env.MONGO_ACCOUNTAPP_PASSWORD;
+const ACCOUNT_DB = process.env.MONGO_ACCOUNTAPP_DB;
 const REPLICA_SET = process.env.REPLICA_SET;
 
 // retryWrites being false is essential
