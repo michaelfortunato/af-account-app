@@ -6,9 +6,11 @@ yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
 
+#typescript dist
+dist/**
 # Ignore any file with the word secret in in!
 *secret*
-
+!src/secrets.ts
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 

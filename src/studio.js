@@ -7,17 +7,16 @@ router.post("/upload", async (req, res) => {
   await artworksCollection.updateOne(
     {
       artist_email,
-      artwork_title: artwork_title,
+      artwork_title: artwork_title
     },
     {
       artist_email,
       artist_name,
       artwork_title,
       img_url,
-      $push: { tags: { $each: tags } },
+      $push: { tags: { $each: tags } }
     },
     { upsert: true }
   );
 });
-
-module.exports = router;
+export default router;
