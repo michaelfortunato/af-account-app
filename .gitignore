@@ -6,6 +6,9 @@ yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
 
+# Ignore .env files
+*.env
+
 #typescript dist
 dist/**
 # Ignore any file with the word secret in in!
